@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <!--====================================================================================================-->
@@ -17,7 +18,7 @@
 </head>
 <!--====================================================================================================-->
 <body>
-    <?php 
+    <?php
     /* -------------------------------------------------------------------------------- */
         require( 'utils.php' );                 // import core security functions
 
@@ -34,27 +35,40 @@
 
   <div class="container">
     <div class="page-body jumbotron col-lg-12 col-md-7 col-sm-6">
-      
       <!-- hall of fame -->
-      <legend><h2>Hall Of Fame</h2></legend>
+      <legend><h2>* * * Hall Of Fame * * *</h2></legend>
       Here there's the list of users who found security related issues in the website:
       <br/><br/>
-      
       <ul class="list">
-        <li>Wh1t3Fox got 100 points for finding an enabled directory browsing</li>
-        <li>...</li>
+      <li><b>donut</b> got 300 points for being first who solved a "broken" challenge</li>
+	  <li><b>Minion</b> got 300 points for finding exploits from other users in .bash_history</li>
+      <li>...</li>
+      </ul>
+
+
+      <!-- Challenge Updates  -->
+      <legend><h2>Challenge Updates</h2></legend>
+      Here are any updates related to the challenges.
+      <br/><br/>
+      <ul class="list">
+      <li>Jan 29th: Challenge <b>easyre_2</b> was broken. It's fixed now.</li>
+      <li>Jan 31th: Challenge <b>key permutation</b> has not an 1-1 mapping. Thus multiple flags are allowed. However you can easily prune many solutions because you know that the flag will be a sentence. Charset is [a-zA-Z0-9_] plus 2 brackets {}. This makes challenge a little bit harder, so I updated challenge points to 800.</li>
+      <li>Apr 16th: Challenge <b>SQL filters #2</b> was broken. It's fixed now.</li>
+      <li>Apr 16th: Challenge <b>Overflow Me</b> updated. It's easier to exploit it now.</li>
+      <li>Apr 16th: Challenge <b>FSA</b> has NX (DEP) disabled. Exploit is easier now.</li>
+      <li>...</li>
       </ul>
 
       <!-- question's part -->
       <legend><h2>Questions</h2></legend>
       For any questions/issues/concerns about the challenges you can ask on:
-        
+
       <ul class="list">
-        <li>Piazza</li>
-        <li>IRC: #cs527ctf on freenode</li>
-      </ul>
-  
-      For any issues beyond the challenges, you can contact 
+              <li>Piazza</li>
+              <li>IRC: #cs527ctf on freenode</li>
+            </ul>
+
+            For any issues beyond the challenges, you can contact
       <i><a href="images/mailme.jpg">admin</a></i>
       <i class="glyphicon glyphicon-heart" style="color:#00a700"></i>
       <i class="glyphicon glyphicon-heart" style="color:#00a700"></i>
@@ -62,11 +76,11 @@
 
       <!-- scoring formula -->
       <legend><h2>Score Points</h2></legend>
-        
+
         Every challenge has an initial number of points, based on its difficulty. However the number
         of points decreases every time that someone solves it. Furthermore all previous solvers,
-        lose some points too. For instance if a challenge gets 100 points, the 1st student who successfully 
-        solves it, gets 100 points. 
+        lose some points too. For instance if a challenge gets 100 points, the 1st student who successfully
+        solves it, gets 100 points.
         </br>
         When the 2nd student solves it, 1st solver gets 90 points and 2nd gets 86.</br>
         When the 3rd student solves it, 1st solver gets 86 points, 2nd gets 80 and 3rd gets 76.</br>
@@ -77,7 +91,7 @@
         <ul class="list">
           <li>points = MAX(initial_points - SQRT((solvers-1)*initial_points*ord_i, initial_points/2)</li>
         </ul>
-        
+
         </br>
         NOTE: You should keep writeups for the challenges you solve. They will be useful for the next challenges
 
@@ -94,10 +108,10 @@
         Attacking the network is not part of the game. We put our efforts at the application level
         and the network layer is not our responsibility.
         </br></br>
-        
-        However, <strong>extra points</strong> will be given for those who will find security-related 
+
+        However, <strong>extra points</strong> will be given for those who will find security-related
         issues to the network.
-        
+
         <!-- and finally, acknowledgements -->
         <legend><h2>Acknowledgements</h2></legend>
         Finally, I'd like to thank some people that helped me with this site:
@@ -106,20 +120,20 @@
           <li>Craig West</li>
           <li>....</li>
         </ul>
-        </br>
+                    </br>
 
         <div class="col-lg-6" >
           <a href="http://hexhive.cs.purdue.edu/" target="_blank">
-            <img class="partner" src="images/HexHive_logo.png" 
-                 height="100" data-toggle="tooltip" data-placement="bottom" 
+            <img class="partner" src="images/HexHive_logo.png"
+                 height="100" data-toggle="tooltip" data-placement="bottom"
                  title="HexHive Systems Security group">
           </a>
         </div>
 
         <div class="col-lg-6" >
           <a href="https://b01lers.net/" target="_blank">
-            <img class="partner" src="https://b01lers.net/static/B01lers/logo_full.png" 
-                 height="100" data-toggle="tooltip" data-placement="bottom" 
+            <img class="partner" src="https://b01lers.net/static/B01lers/logo_full.png"
+                 height="100" data-toggle="tooltip" data-placement="bottom"
                  title="b01lers ctf team">
           </a>
         </div>
@@ -128,9 +142,7 @@
 
     <?php prntfooter(); ?>
 
-  </div> <!-- container -->        
+  </div> <!-- container -->
 </body>
 <!--====================================================================================================-->
 </html>
-
-
